@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{241436DF-7997-4408-AF1B-ED436C70B619}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dope</RootNamespace>
+    <AssemblyName>Dope</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme\Bind.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\Checkbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\Collapse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\Combo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\Logo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\Side.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Theme\Side.Designer.cs">
+      <DependentUpon>Side.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theme\Slider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\Slots.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\Switch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\ThemeUtils.cs" />
+    <Compile Include="utils\Hook\KeyboardHook.cs" />
+    <Compile Include="utils\Hook\MouseHook.cs" />
+    <Compile Include="utils\Imports.cs" />
+    <Compile Include="utils\Slot.cs" />
+    <Compile Include="utils\Utils.cs" />
+    <Compile Include="views\ClickSound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ClickSound.Designer.cs">
+      <DependentUpon>ClickSound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Jitter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Jitter.Designer.cs">
+      <DependentUpon>Jitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Right.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Right.Designer.cs">
+      <DependentUpon>Right.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Left.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Left.Designer.cs">
+      <DependentUpon>Left.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils\Config.cs" />
+    <Compile Include="views\Configs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Configs.Designer.cs">
+      <DependentUpon>Configs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Theme\Side.resx">
+      <DependentUpon>Side.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ClickSound.resx">
+      <DependentUpon>ClickSound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Jitter.resx">
+      <DependentUpon>Jitter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Right.resx">
+      <DependentUpon>Right.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Left.resx">
+      <DependentUpon>Left.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Configs.resx">
+      <DependentUpon>Configs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G303.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G502.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GPro.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HP.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Regular.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

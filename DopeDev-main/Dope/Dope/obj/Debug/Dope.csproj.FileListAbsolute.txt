@@ -1,0 +1,17 @@
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\bin\Debug\Dope.exe.config
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\bin\Debug\Dope.exe
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\bin\Debug\Dope.pdb
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.csprojAssemblyReference.cache
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.Main.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.Properties.Resources.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.Theme.Side.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.views.ClickSound.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.views.Jitter.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.views.Right.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.views.Left.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.views.Configs.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.views.Settings.resources
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.csproj.GenerateResource.cache
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.csproj.CoreCompileInputs.cache
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.exe
+C:\Users\SSVERIFY\Desktop\DopeDev-main\Dope\Dope\obj\Debug\Dope.pdb
